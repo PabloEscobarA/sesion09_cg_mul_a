@@ -46,10 +46,14 @@ function init() {
     Cubo.push(cubo(4, 4, 4, 0xFF0000, 'Physical', false));
     Cubo.push(cubo(4, 4, 4, 0x00FFFF, 'Standard', false));
     Cubo.push(cubo(4, 4, 4, 0xFFFFFF, 'Lambert', false));
+    Cubo.push(cubo(4, 4, 4, 0x50CBDC, 'Phong', false));
+    Cubo.push(cubo(4, 4, 4, 0xCE22D6, 'Basic', false));
 
-    Cubo[0].position.set(-4, 9, 0);
-    Cubo[1].position.set(-4, 18, 0);
-    Cubo[2].position.set(-4, 27, 0);
+    Cubo[0].position.set(0, 9, 0);
+    Cubo[1].position.set(0, 18, 0);
+    Cubo[2].position.set(0, 27, 0);
+    Cubo[3].position.set(0, 36, 0);
+    Cubo[4].position.set(0, 45, 0);
 
     //Luz (requerida para el material MeshLambertMaterial)
     light = new THREE.PointLight(0xFFFF00); //  Luz proveniente de un punto en el espacio, 
