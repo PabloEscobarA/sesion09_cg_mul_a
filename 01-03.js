@@ -43,9 +43,9 @@ function init() {
     scene.add(axes);
 
     Cubo = [];   // Definir un array unidimensional
-    Cubo.push(cubo(4, 4, 4, 0xFFDD00, 'Physical', false));
-    Cubo.push(cubo(4, 4, 4, 0xFF0000, 'Standard', false));
-    Cubo.push(cubo(4, 4, 4, 0x00FF00, 'Standard', false));
+    Cubo.push(cubo(4, 4, 4, 0xFF0000, 'Physical', false));
+    Cubo.push(cubo(4, 4, 4, 0x00FFFF, 'Standard', false));
+    Cubo.push(cubo(4, 4, 4, 0xFFFFFF, 'Lambert', false));
 
     Cubo[0].position.set(-4, 9, 0);
     Cubo[1].position.set(-4, 18, 0);
@@ -53,8 +53,8 @@ function init() {
 
     //Luz (requerida para el material MeshLambertMaterial)
     light = new THREE.PointLight(0xFFFF00); //  Luz proveniente de un punto en el espacio, 
-    light.position.set( -10, 5, 15 );             //  Localización de la luz. (x, y, z).
-    scene.add( light ); 
+    light.position.set( -10, 40, 15 );             //  Localización de la luz. (x, y, z).
+    scene.add( light );
 
     // position and point the camera to the center of the scene
     camera.position.set(-20, 60, 40);
